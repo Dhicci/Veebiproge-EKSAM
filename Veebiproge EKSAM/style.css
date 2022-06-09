@@ -1,0 +1,136 @@
+/*
+Theme Name: Taavi teema
+Text Domain: taaviteema
+Version: 1.0
+Tested up to: 5.9
+Requires at least: 5.9
+Requires PHP: 5.2.4
+Description: Veebiprogrammeerimise õppeaine raames loodud teema
+Tags: RIF, veebiprogrammeerimine
+Author: Taavi Rannu
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+body{
+    background-image: url(assets/taust.PNG);
+}
+
+header{
+    position: absolute; top: 0px; left: 0px;
+    background-color: lightgrey;
+    height: 100px;
+    width: 100%;
+}
+
+footer {
+    position: absolute; bottom: 0px; left: 0px;
+    background-color: lightgrey;
+    height: 100px;
+    width: 100%;
+}
+
+.title {
+    font-size: 55px;
+    font-weight: bolder;
+    display: inline;
+    margin-left: 43%;
+    background-color: lightgray;
+}
+
+#table {
+    margin-top: 7%;
+    margin-left: 15%;
+    width: 60%;
+    height: min-content;
+    display: grid;
+    column-gap: 9%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+}
+
+.item {
+    height: 600px;
+    background-color: lightgray;
+    border-radius: 9px;
+    border-width: 5px;
+    border-color: darkslategray;
+    border-style: solid;
+    /*transition: all .2s ease-in-out;*/
+}
+
+.featuredImg {
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 9px;
+    border-width: 5px;
+    border-color: darkslategray;
+    border-style: solid;
+    transition: all .5s ease-in-out;
+}
+
+.featuredImg:hover { 
+    transform-origin: 0% 0%;
+    transform: scale(2); 
+}
+    
+.contentContainer {
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 30%;
+}
+
+.pic {
+    width: 256px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 9px;
+    border-width: 5px;
+    border-color: darkslategray;
+    border-style: solid;
+}
+
+.itemName {
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.link {
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.space {
+    height: 100px;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footerTxt {
+    margin-left: 2%;
+    font-weight: bold;
+}
